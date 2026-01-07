@@ -50,3 +50,20 @@ footer {
   main { flex-direction: column; }
   article, aside { flex: auto; }
 }
+
+/* Smartphone-specific overrides using body class */
+body.works_on_smartphone main {
+  flex-direction: column;     /* stack article and aside vertically */
+}
+
+body.works_on_smartphone article,
+body.works_on_smartphone aside {
+  flex: auto;                 /* allow flexible resizing */
+  width: 100%;                /* full width for each section */
+  margin-bottom: 1rem;        /* spacing between stacked sections */
+}
+
+body.works_on_smartphone header,
+body.works_on_smartphone footer {
+  text-align: center;         /* center text for mobile headers/footers */
+}

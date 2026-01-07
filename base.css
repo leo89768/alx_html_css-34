@@ -92,9 +92,32 @@ h3 { font-size: 28px; margin: 25px 0 10px; }
 h4 { font-size: 20px; font-weight: bold; margin: 20px 0 10px; }
 h5 { font-size: 18px; font-weight: bold; margin: 15px 0 10px; }
 h6 { font-weight: bold; margin: 5px 0; }
-/* Responsive */
+
+/* Responsive: smartphone-specific overrides */
 @media (max-width: 800px) {
-  body.works_on_smartphone { display: block; }
-  body.works_on_smartphone main { display: block; }
-  header .right { float: none; }
+  body.works_on_smartphone {
+    display: block;       /* override flex layout, stack content vertically */
+    font-size: 0.9rem;    /* slightly smaller text for mobile readability */
+    line-height: 1.4;     /* improve spacing between lines */
+    padding: 0.5rem;      /* reduce padding for compact layout */
+  }
+
+  body.works_on_smartphone main {
+    display: block;       /* force main container to stack children vertically */
+  }
+
+  body.works_on_smartphone header,
+  body.works_on_smartphone footer {
+    text-align: center;   /* center header/footer text for mobile friendliness */
+  }
+
+  header .right {
+    float: none;          /* remove float so nav items stack naturally */
+    margin: 0 auto;       /* center navigation items horizontally */
+  }
+
+  body.works_on_smartphone aside,
+  body.works_on_smartphone article {
+    padding: 20px 10px;   /* reduce padding for smaller screens */
+  }
 }
