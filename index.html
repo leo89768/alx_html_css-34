@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Home — My First Portfolio</title>
 
-   <link href="base.css" rel="stylesheet">
+  <link href="base.css" rel="stylesheet">
   <link href="styles.css" rel="stylesheet">
 </head>
-<body>
+<body class="works_on_smartphone">
   <header>
     <ul>
+      <li class="logo">&#x1F680;</li>
       <li><a href="index.html">Home</a></li>
       <li><a href="tweets.html">Tweets</a></li>
     </ul>
@@ -20,22 +21,41 @@
       <h1>Welcome to My Portfolio</h1>
       <h2>Learning Front-End Development</h2>
       <h3>Step-by-Step Progress</h3>
-      <p>This portfolio is my first structured project, where I practice HTML, and Git workflows.</p>
-      <p>Each page follows a consistent structure with semantic tags, making the site accessible and professional.</p>
-      <p>I am building this project incrementally, adding new features and improving the layout as I learn more.</p>
-      <p>Navigation links connect all pages, ensuring a smooth user experience across the site.</p>
-      <p>
-        <a href="https://www.alxafrica.com" target="_blank">
+
+      <p class="intro">
+        This portfolio is my first structured project, where I practice HTML and Git workflows.
+      </p>
+
+      <div class="feature-cards">
+        <section class="card">
+          <h4>Accessible structure</h4>
+          <p>Semantic tags and consistent layout improve readability and navigation.</p>
+        </section>
+        <section class="card">
+          <h4>Incremental learning</h4>
+          <p>I add features progressively and refactor as I learn better patterns.</p>
+        </section>
+        <section class="card">
+          <h4>Connected pages</h4>
+          <p>Navigation links keep the experience smooth across the site.</p>
+        </section>
+      </div>
+
+      <figure class="brand">
+        <a href="https://www.alxafrica.com" target="_blank" rel="noopener">
           <img src="https://i.ibb.co/gTDZZT8/ALX-Logo-07.png" alt="ALX Logo" width="200">
         </a>
-      </p>
+        <figcaption>Partner logo</figcaption>
+      </figure>
     </article>
+
     <aside>
       <p>placeholder to add comment thread later</p>
     </aside>
   </main>
   <footer>
-    <p>Made by Yaw - <a href="https://github.com/leo89768" target="_blank">here</a></p>
+    <p>Made by Yaw — <a href="https://github.com/leo89768" target="_blank" rel="noopener">here</a></p>
   </footer>
 </body>
 </html>
+
